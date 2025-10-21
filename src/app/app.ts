@@ -1,22 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { Card } from './card/card';
-import { CardRoxo } from './card-roxo/card-roxo';
+import { Button } from "./Component/button/button";
+import { Card } from "./Component/card/card";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Card, CardRoxo],
+  imports: [Button, Card],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App {
 
-  cardPlanType = 'Simples';
-  cardPlanPrice = 5000;
-  
-  handlePlanType(text: string) {
-    this.cardPlanType = text;
+  buttonClicked(){
+    console.log("Button clicked!");
   }
-
-  protected readonly title = signal('project-init');
 }
