@@ -2,42 +2,51 @@
   "hash": "62be3885",
   "configHash": "f54664d8",
   "lockfileHash": "063ca1b8",
-  "browserHash": "c4aba111",
+  "browserHash": "cda96cf2",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "8b265d8d",
-      "needsInterop": false
-    },
-    "@angular/material/slider": {
-      "src": "../../../../../../node_modules/@angular/material/fesm2022/slider.mjs",
-      "file": "@angular_material_slider.js",
-      "fileHash": "1491871e",
+      "fileHash": "97fa9fe6",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "08f89fcc",
+      "fileHash": "4d4797be",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "84127efe",
+      "fileHash": "73c95bde",
       "needsInterop": false
     },
     "zone.js": {
       "src": "../../../../../../node_modules/zone.js/fesm2015/zone.js",
       "file": "zone__js.js",
-      "fileHash": "27e30076",
+      "fileHash": "b87a93da",
       "needsInterop": true
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "254d5c38",
+      "needsInterop": false
+    },
+    "@angular/material/slider": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/slider.mjs",
+      "file": "@angular_material_slider.js",
+      "fileHash": "eaadc596",
+      "needsInterop": false
     }
   },
   "chunks": {
     "chunk-3VRPEBJE": {
       "file": "chunk-3VRPEBJE.js"
+    },
+    "chunk-MNJRPOEP": {
+      "file": "chunk-MNJRPOEP.js"
     },
     "chunk-GU7Q72UK": {
       "file": "chunk-GU7Q72UK.js"
