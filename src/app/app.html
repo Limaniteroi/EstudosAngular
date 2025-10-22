@@ -1,14 +1,19 @@
-<div class="cards-container">
-  
-  <app-card 
-  [planType]="cardPlanType"
-  [planPriceAlias]="cardPlanPrice"
-  ></app-card>
+<!-- <div style="background-color: green;" *ngIf="true; else meuTemplate">Sou uma div</div>
 
-  <app-card-roxo></app-card-roxo>
-  
-</div>
+<! Só pode usar o ngIf uma única vez; Apenas uma diretiva estrutural por elemento HTML -->
+<ng-container *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"> </ng-container>
 
-<br/>
 
-<input #meuInput type="text" (keyup)="handlePlanType(meuInput.value)" placeholder="Digite o input"/>
+<ng-template #meuTemplate>
+
+  <div style="background-color: green;">Sou a div then!</div>
+</ng-template> 
+
+
+<ng-template #meuOutroTemplate>
+
+  <div style="background-color: purple">Sou a div else!</div>
+</ng-template> 
+
+
+<button (click)="toggleProp()">Toggle</button>"

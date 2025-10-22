@@ -1,22 +1,36 @@
 import { Component, signal } from '@angular/core';
-import { Card } from './card/card';
-import { CardRoxo } from './card-roxo/card-roxo';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Card, CardRoxo],
+  imports: [NgIf],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App {
 
-  cardPlanType = 'Simples';
-  cardPlanPrice = 5000;
+  minhaProp = true;
   
-  handlePlanType(text: string) {
-    this.cardPlanType = text;
+  toggleProp(){
+    this.minhaProp = !this.minhaProp;
   }
 
-  protected readonly title = signal('project-init');
+  isTruthly(){
+    // return "0";
+    // return true;
+    // return 1;
+    // return [];
+    // return "teste";
+    //return {};
+  }
+
+  isFalsy(){
+    // return null;
+    // return undefined;
+    // return false;
+    // return 0;
+    // return NaN;
+    //return "";
+  }
 }
