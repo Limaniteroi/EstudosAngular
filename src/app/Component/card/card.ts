@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { Button } from "../button/button";
 
 @Component({
@@ -11,4 +11,10 @@ export class Card {
   @Input({ required: true}) planType: string = '';
   @Input({ required: true}) planPrice: number = 0;
   @Input({ required: true}) cardStyle: 'orange' | 'purple' = 'orange';
+
+  @Output('buttonClicked') buttonClickedEmitt = new EventEmitter<void>();
+
+  onButtonClicked(){
+    this.buttonClickedEmitt.emit();
+}
 }

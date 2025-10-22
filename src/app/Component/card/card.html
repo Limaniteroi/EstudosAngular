@@ -7,8 +7,10 @@
     }">
 
     <div class = "card__plan card__item"> Plano <b>{{ planType }}</b> </div>
-    <div class = "card__price card__item"> R$ {{ planPrice }} /mês </div>
+    <div class = "card__price card__item"> R$ {{ planPrice }},00 /mês </div>
 
     <app-button [text]="'Adquirir'" 
-    [style]="cardStyle === 'orange' ? 'white' : 'purple'"></app-button>
+    [style]="cardStyle === 'orange' ? 'white' : 'purple'"
+    (clicked)="onButtonClicked()"></app-button>
+
 </div>
