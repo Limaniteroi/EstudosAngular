@@ -1,12 +1,14 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { Person } from "./person/person";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrls: ['./app.scss'],
-  imports: [NgFor, NgIf]
+  imports: [NgFor, NgIf, Person]
 })
+
 
 export class App {
   personSelectedIndex: number | undefined;
