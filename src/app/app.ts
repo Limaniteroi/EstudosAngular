@@ -1,22 +1,21 @@
 import { Component, signal } from '@angular/core';
-import { Card } from './card/card';
-import { CardRoxo } from './card-roxo/card-roxo';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Card, CardRoxo],
+  imports: [FormsModule],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App {
 
-  cardPlanType = 'Simples';
-  cardPlanPrice = 5000;
-  
-  handlePlanType(text: string) {
-    this.cardPlanType = text;
-  }
+  name: string = 'Marianna';
 
-  protected readonly title = signal('project-init');
+  handleInputChange(event: string){
+    console.log(event);
+
+    this.name = event.toUpperCase();
+ }
+
 }

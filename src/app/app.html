@@ -1,14 +1,7 @@
-<div class="cards-container">
-  
-  <app-card 
-  [planType]="cardPlanType"
-  [planPriceAlias]="cardPlanPrice"
-  ></app-card>
+<h1>Nome</h1>
+<input type="text" [(ngModel)]="name" (ngModelChange)="handleInputChange($event)"/>
 
-  <app-card-roxo></app-card-roxo>
-  
-</div>
+<h1>Nome digitado: {{name}}</h1>
 
-<br/>
 
-<input #meuInput type="text" (keyup)="handlePlanType(meuInput.value)" placeholder="Digite o input"/>
+<!-- [ngModel]='name' (ngModelChange)="handleInputChange($event)" -->
