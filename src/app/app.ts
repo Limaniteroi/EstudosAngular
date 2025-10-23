@@ -1,22 +1,29 @@
-import { Component, signal } from '@angular/core';
-import { Card } from './card/card';
-import { CardRoxo } from './card-roxo/card-roxo';
+import { Component, Pipe, signal } from '@angular/core';
+import { UpperCasePipe } from '@angular/common';
+import { StatusClassPipe } from './pipes/status-class.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Card, CardRoxo],
+  imports: [UpperCasePipe, StatusClassPipe],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App {
 
-  cardPlanType = 'Simples';
-  cardPlanPrice = 5000;
-  
-  handlePlanType(text: string) {
-    this.cardPlanType = text;
-  }
+  text = 'Felipe';
+  pessoa = { name: 'Felipe', status: 1};
+  pessoa2 = { name: 'Luiz', status: 2};
+  pessoa3 = { name: 'Leo', status: 3};
 
-  protected readonly title = signal('project-init');
+  getStyle(status: number){
+
+    console.log('getStyle');
+
+    return {
+    'active': status === 1,
+    'partial': status === 2,
+    'blocked': status === 3,
+    }
+  }
 }

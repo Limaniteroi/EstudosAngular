@@ -1,14 +1,17 @@
-<div class="cards-container">
-  
-  <app-card 
-  [planType]="cardPlanType"
-  [planPriceAlias]="cardPlanPrice"
-  ></app-card>
+<h1> {{text | uppercase}}</h1>
+<h1> {{pessoa}}</h1>
 
-  <app-card-roxo></app-card-roxo>
-  
-</div>
+<!-- Maneira de realizar a mudança de status, mas sem a aplicação direta no html : prejudicial para a performance -->
+<h1 [class]="getStyle(pessoa.status)"> {{ pessoa.name }}</h1>
 
-<br/>
+<!-- Maneira de realizar a função dentro do html -->
+<h1
+[class]="{
+  'active': pessoa2.status === 1,
+  'partial': pessoa2.status === 2,
+  'blocked': pessoa2.status === 3,
+}"> {{ pessoa2.name }}</h1>
 
-<input #meuInput type="text" (keyup)="handlePlanType(meuInput.value)" placeholder="Digite o input"/>
+
+<!-- Usando Pipe-->
+ <h1 [class]="pessoa3.status | statusClass"> {{pessoa3.name}}</h1>
