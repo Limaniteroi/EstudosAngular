@@ -1,11 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { Card } from './card/card';
-import { CardRoxo } from './card-roxo/card-roxo';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Card, CardRoxo],
+  imports: [],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })

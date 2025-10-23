@@ -6,7 +6,7 @@ import {
   getDOM,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-GU7Q72UK.js";
+} from "./chunk-IBO36R7L.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_ID,
@@ -4707,4 +4707,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-3VRPEBJE.js.map
+//# sourceMappingURL=chunk-DHHUNKXX.js.map

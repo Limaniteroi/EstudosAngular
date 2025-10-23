@@ -1,7 +1,7 @@
 import {
   getDOM,
   isPlatformBrowser
-} from "./chunk-GU7Q72UK.js";
+} from "./chunk-IBO36R7L.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,
